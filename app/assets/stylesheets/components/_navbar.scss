@@ -10,3 +10,7 @@
 .navbar-lewagon .navbar-nav{
   align-items: flex-end;
 }
+
+.fade-in {
+  transition: background-image 6s ease-in-out;
+}
