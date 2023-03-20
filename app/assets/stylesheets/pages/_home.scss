@@ -11,10 +11,28 @@
 }
 
 .body-home {
-  height: 80vh;
+  height: 72vh;
   width: 100%;
-  background-image: url('img_1.jpg');
+  animation: change-image 24s infinite ease-in-out alternate-reverse;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@keyframes change-image {
+  0% {
+    background-image: url('img_1.jpg');
+  }
+  25% {
+    background-image: url('img_2.jpg');
+  }
+  50% {
+    background-image: url('img_3.jpg');
+  }
+  75% {
+    background-image: url('img_4.jpg');
+  }
+  100% {
+    background-image: url('img_5.jpg');
+  }
 }
