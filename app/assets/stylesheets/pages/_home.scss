@@ -6,14 +6,14 @@
   justify-content:space-between;
 }
 * {
-  background-color: $gray;
+  background-color: black;
   color: white;
 }
 
 .body-home {
   height: 72vh;
   width: 100%;
-  animation: change-image 24s infinite ease-in-out alternate-reverse;
+  animation: change-image 24s infinite cubic-bezier(0.78,-0.2, 0.32, 1.26);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -33,6 +33,6 @@
     background-image: url('img_4.jpg');
   }
   100% {
-    background-image: url('img_5.jpg');
+    background-image: url('img_1.jpg');
   }
 }
