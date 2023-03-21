@@ -11,21 +11,22 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
-        <%# if user_signed_in? %>
           <li class="nav-item active">
             <%= link_to "Film", films_path, class: "nav-link" %>
           </li>
           <li class="nav-item">
             <%= link_to "Messages", "#", class: "nav-link" %>
           </li>
+        <% if user_signed_in? %>
+            <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar ", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
           <li class="nav-item dropdown">
-            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown" color="white">
-              <%= link_to "Action", "#", class: "dropdown-item" %>
-              <%= link_to "Another action", "#", class: "dropdown-item" %>
-              <%= link_to "Log out", "#", class: "dropdown-item", data: {turbo_method: :delete} %>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown" color="black">
+              <%= link_to "Filme", new_film_path, class: "dropdown-item" %>
+              <%= link_to "Anúncio", "#", class: "dropdown-item" %>
+              <%= link_to "Texto", "#", class: "dropdown-item" %>
             </div>
           </li>
-
+        <% end %>
       </ul>
     </div>
   </div>
