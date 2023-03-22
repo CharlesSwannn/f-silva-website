@@ -1,4 +1,9 @@
-<div class="container">
-  <h1>Films#index</h1>
-  <p>Find me in app/views/films/index.html.erb</p>
+<div class="card-container">
+  <% @films.each do |film| %>
+    <%= link_to film_path(film) do %>
+      <div class="card">
+          <p><%= film.title %></p>
+      </div>
+    <% end %>
+  <% end %>
 </div>

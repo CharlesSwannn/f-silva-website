@@ -1,0 +1,17 @@
+.card {
+  height: 16vh;
+
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0vw 10vw;
+  grid-gap: 20px;
+}
+
+@media(max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}
