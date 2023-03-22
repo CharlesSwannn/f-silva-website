@@ -1,0 +1,9 @@
+<%= simple_form_for @film do |f| %>
+
+  <%= f.input :title, label: "Título" %>
+  <%= f.input :description, label: "Descrição" %>
+  <%= f.input :year, label: "Ano" %>
+  <%= f.input :festivals, label: "Festivais" %>
+  <%= f.input :awards, label: "Prémios" %>
+  <%= f.submit %>
+<% end %>
