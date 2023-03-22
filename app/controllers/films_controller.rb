@@ -3,6 +3,10 @@ class FilmsController < ApplicationController
     @films = Film.all
   end
 
+  def show
+    @film = Film.find(params[:id])
+  end
+
   def new
     @film = Film.new
   end
@@ -13,6 +17,19 @@ class FilmsController < ApplicationController
       redirect_to films_path
     else
       render :new, status: :unprocessable_entity
+    end
+  end
+
+  def edit
+    @film = Film.find(params[:id])
+  end
+
+  def update
+    @film = Film.find(params[:id])
+    if @film.update(film_params)
+      redirect_to film_path(@film)
+    else
+      render :edit, status: :unprocessable_entity
     end
   end
 
