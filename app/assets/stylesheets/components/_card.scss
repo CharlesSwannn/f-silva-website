@@ -1,6 +1,33 @@
 .card {
   height: 16vh;
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+  position: relative;
+  transition: 0.3s ease;
+}
 
+.card:hover{
+  .card-text {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  opacity: 0.4;
+}
+
+.card-text {
+  position: absolute;
+  top: 25%;
+  bottom: 25%;
+  left: 25%;
+  right: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  opacity: 0;
+  transition: 0.3s ease;
+  transform: translateY(10px);
 }
 
 .card-container {
