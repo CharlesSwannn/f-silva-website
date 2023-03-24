@@ -1,9 +1,7 @@
 <%= simple_form_for commercial do |f| %>
   <%= f.input :title, label: "Título" %>
-  <%= f.input :description, label: "Descrição" %>
   <%= f.input :year, label: "Ano" %>
-  <%= f.input :festivals, label: "Festivais" %>
-  <%= f.input :awards, label: "Prémios" %>
+  <%= f.input :company, label: "Empresa" %>
   <%= f.input :photos, label: "Fotos", as: :file, input_html:{ multiple: true } %>
   <%= f.submit %>
 <% end %>

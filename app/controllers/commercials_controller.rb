@@ -8,9 +8,16 @@ class CommercialsController < ApplicationController
   end
 
   def new
+    @commercial = Commercial.new
   end
 
   def create
+    @commercial = Commercial.new(commercial_params)
+    if @commercial.save
+      redirect_to commercials_path
+    else
+      render :new, status: :unprocessable_entity
+    end
   end
 
   def edit
@@ -20,5 +27,11 @@ class CommercialsController < ApplicationController
   end
 
   def delete
+  end
+
+  private
+
+  def commercial_params
+    params.require(:commercial).permit(:title, :year, :company, photos: [])
   end
 end
