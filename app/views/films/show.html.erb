@@ -1,4 +1,14 @@
 <div class="container">
-  <h1><%= @film.title %></h1>
-  <%= link_to  "edit", edit_film_path(@film) %>
+  <div class="show-container">
+    <h1><%= @film.title %></h1>
+    <div class="img-show">
+      <%= image_tag @film.photos.first, style:"width:100%;" %>
+    </div>
+    <div class="sml-imgs-container">
+      <%= image_tag @film.photos.first, style:"height:10vh;" %>
+      <%= image_tag @film.photos.first, style:"height:10vh;" %>
+      <%= image_tag @film.photos.first, style:"height:10vh;" %>
+    </div>
+  </div>
+  <%= link_to  "edit", edit_film_path(@film) if current_user%>
 </div>
