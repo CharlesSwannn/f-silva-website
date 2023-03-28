@@ -6,6 +6,3 @@ import { application } from "./application"
 
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
-
-import HomeImagesController from "./home_images_controller"
-application.register("home-images", HomeImagesController)
