@@ -1,6 +1,7 @@
 <%= simple_form_for commercial do |f| %>
   <%= f.input :title, label: "Título" %>
   <%= f.input :year, label: "Ano" %>
+  <%= f.input :vimeo_id, label: "Id do Vimeo" %>
   <%= f.input :company, label: "Empresa" %>
   <%= f.input :photos, label: "Fotos", as: :file, input_html:{ multiple: true } %>
   <%= f.submit %>
