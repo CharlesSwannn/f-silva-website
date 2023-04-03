@@ -2,7 +2,15 @@
   <%= f.input :title, label: "Título" %>
   <%= f.input :year, label: "Ano" %>
   <%= f.input :vimeo_id, label: "Id do Vimeo" %>
-  <%= f.input :company, label: "Empresa" %>
+  <%= f.input :producer, label: "Produtora" %>
+  <%= f.label :directed do %>
+    <%= f.check_box :directed %>
+    Direcção
+  <% end %>
+  <%= f.label :montage do %>
+  <%= f.check_box :montage %>
+    Montagem
+  <% end %>
   <%= f.input :photos, label: "Fotos", as: :file, input_html:{ multiple: true } %>
   <%= f.submit %>
 <% end %>

@@ -40,6 +40,6 @@ class CommercialsController < ApplicationController
   end
 
   def commercial_params
-    params.require(:commercial).permit(:title, :year, :company, :vimeo_id, photos: [])
+    params.require(:commercial).permit(:title, :year, :company, :directed, :montage, :producer, :vimeo_id, photos: [])
   end
 end
