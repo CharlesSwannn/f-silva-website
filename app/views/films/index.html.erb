@@ -1,7 +1,7 @@
 <div class="card-container">
   <% @films.each do |film| %>
     <%= link_to film_path(film) do %>
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= url_for(film.photos.first) if film.photos.attached? %>');">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= url_for(film.cover_photo) if film.cover_photo.attached? %>');">
           <p class="card-text"><%= film.title %></p>
       </div>
     <% end %>

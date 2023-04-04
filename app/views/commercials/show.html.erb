@@ -23,7 +23,7 @@ data-controller="commercial-modal">
           <% @commercial.display_photos.each do |photo| %>
             <div class="photo"
             data-action="click->commercial-modal#largeImage">
-              <%= image_tag photo, style:"width:100%", class:"modal-photo"  %>
+              <%= image_tag photo, style:"width:100%", class:"modal-photo show-photo"  %>
             </div>
           <% end %>
         <% end %>

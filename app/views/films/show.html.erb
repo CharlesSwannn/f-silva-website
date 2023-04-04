@@ -12,10 +12,12 @@ data-controller="commercial-modal">
         <h5><%= @film.title %></h2>
         <p class="p-col">Year: <%= @film.year %></p>
         <p class="p-col">Producer: <%= @film.producer %></p>
-        <p class="p-col">Realização: <%= @film.realização %></p>
-        <p class="p-col">Montagem: <%= @film.montagem %></p>
-
+        <p class="p-col">Realização: <%= @film.director %></p>
+        <p class="p-col">Montagem: <%= @film.montage %></p>
       </div>
+    </div>
+    <div>
+      <hr style="color:white;opacity:.7;">
     </div>
     <div class="row">
       <div class="photo-grid-container">
@@ -23,7 +25,7 @@ data-controller="commercial-modal">
           <% @film.display_photos.each do |photo| %>
             <div class="photo"
             data-action="click->commercial-modal#largeImage">
-              <%= image_tag photo, style:"width:100%", class:"modal-photo"  %>
+              <%= image_tag photo, style:"width:100%;", class:"modal-photo"  %>
             </div>
           <% end %>
         <% end %>

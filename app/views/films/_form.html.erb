@@ -4,6 +4,10 @@
   <%= f.input :year, label: "Ano" %>
   <%= f.input :festivals, label: "Festivais" %>
   <%= f.input :awards, label: "Prémios" %>
-  <%= f.input :photos, label: "Fotos", as: :file, input_html:{ multiple: true } %>
+  <%= f.input :vimeo_id, label: "ID do Vimeo" %>
+  <%= f.input :producer, label: "Produtora" %>
+  <%= f.input :director, label: "Realização" %>
+  <%= f.input :cover_photo, as: :file, label: "Foto de capa" %>
+  <%= f.input :display_photos, label: "Frames que queiras mostrar", as: :file, input_html:{ multiple: true } %>
   <%= f.submit %>
 <% end %>
