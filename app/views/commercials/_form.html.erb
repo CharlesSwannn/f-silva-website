@@ -3,14 +3,9 @@
   <%= f.input :year, label: "Ano" %>
   <%= f.input :vimeo_id, label: "Id do Vimeo" %>
   <%= f.input :producer, label: "Produtora" %>
-  <%= f.label :directed do %>
-    <%= f.check_box :directed %>
-    Direcção
-  <% end %>
-  <%= f.label :montage do %>
-  <%= f.check_box :montage %>
-    Montagem
-  <% end %>
-  <%= f.input :photos, label: "Fotos", as: :file, input_html:{ multiple: true } %>
+  <%= f.input :realização, label: "Realização" %>
+  <%= f.input :montagem, label: "Montagem" %>
+  <%= f.input :cover_photo, label: "Foto de Capa" %>
+  <%= f.input :display_photos, label: "Frames que queiras mostrar", as: :file, input_html:{ multiple: true } %>
   <%= f.submit %>
 <% end %>

@@ -1,7 +1,7 @@
 <div class="card-container">
   <% @commercials.each do |commercial| %>
     <%= link_to commercial_path(commercial) do %>
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= url_for(commercial.photos.first) if commercial.photos.attached? %>');">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= url_for(commercial.cover_photo) if commercial.cover_photo.attached? %>');">
           <p class="card-text"><%= commercial.title %></p>
       </div>
     <% end %>

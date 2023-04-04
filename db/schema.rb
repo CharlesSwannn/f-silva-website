@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_04_03_155958) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_04_134329) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -62,8 +62,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_03_155958) do
     t.datetime "updated_at", null: false
     t.string "vimeo_id"
     t.string "producer"
-    t.boolean "directed", default: false
-    t.boolean "montage", default: false
+    t.string "montagem"
+    t.string "realização"
   end
 
   create_table "films", force: :cascade do |t|
