@@ -17,7 +17,7 @@ data-controller="commercial-modal">
         <% if @film.montage %><p class="p-col"><%= "Montagem: #{@film.montage}" %></p><% end %>
         <% if @film.festivals %><p class="p-col"><%= "Festivais: #{@film.festivals}" %></p><% end %>
         <% if @film.awards %><p class="p-col"><%= "Prémios: #{@film.awards}" %></p><% end %>
-        <div class="awards-festivals" >
+        <div class="awards-festivals" data-controller="tootip">
           <button type="button" class="btn btn-primary"
           data-bs-toggle="tooltip" data-bs-placement="top"
           data-bs-custom-class="custom-tooltip"
