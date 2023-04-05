@@ -16,6 +16,10 @@
 
 .show-photo {
   height: 16vh;
+  object-fit: cover;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 @media(max-width: 992px) {
