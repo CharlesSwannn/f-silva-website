@@ -4,7 +4,6 @@ import { Controller } from "@hotwired/stimulus"
 export default class extends Controller {
   static targets = ["image"]
   connect() {
-    console.log("yo, mf!")
   }
   largeImage(event){
     if(event.target.classList.contains("modal-photo")){
