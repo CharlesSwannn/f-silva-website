@@ -1,4 +1,6 @@
 class Film < ApplicationRecord
+  enum category: %i[narrative doc dubbing]
+
   validates :title, presence: true
   validates :year, presence: true
   validates :vimeo_id, presence: true

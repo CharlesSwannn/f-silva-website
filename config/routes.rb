@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   root to: "pages#home", as: :home
   resources :films
   resources :commercials
-
+  get "docs", to: "films#docs", as: :docs
+  get "narrative", to: "films#narrative", as: :narrative
+  get "dubbing", to: "films#dubbing", as: :dubbing
 
   # This line overrides the registration controller of Devise (so that it'll be a single user app)
   devise_for :users, controllers: { registrations: "registrations" }

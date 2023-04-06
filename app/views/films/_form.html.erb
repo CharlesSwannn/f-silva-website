@@ -1,6 +1,7 @@
 <%= simple_form_for film do |f| %>
   <%= f.input :title, label: "Título" %>
   <%= f.input :description, label: "Descrição" %>
+  <%= f.select :category, options_for_select(Film.categories.map {|key, value| [key.titleize, Film.categories.key(value)]}, @film.category) %>
   <%= f.input :year, label: "Ano" %>
   <%= f.input :festivals, label: "Festivais" %>
   <%= f.input :awards, label: "Prémios" %>

@@ -499,6 +499,11 @@
     "merge-stream" "^2.0.0"
     "supports-color" "^8.0.0"
 
+"jquery@^3.6.4":
+  "integrity" "sha512-v28EW9DWDFpzcD9O5iyJXg3R3+q+mET5JhnjJzQUZMHOv67bpSIHq81GEYpPNZHG+XXHsfSme3nxp/hndKEcsQ=="
+  "resolved" "https://registry.npmjs.org/jquery/-/jquery-3.6.4.tgz"
+  "version" "3.6.4"
+
 "json-parse-even-better-errors@^2.3.1":
   "integrity" "sha512-xyFwyhro/JEof6Ghe2iz2NcXoj2sloNsWr/XsERDK/oiPCfaNhl5ONfp+jQdAZRQQ0IJWNzH9zIZF7li91kh2w=="
   "resolved" "https://registry.npmjs.org/json-parse-even-better-errors/-/json-parse-even-better-errors-2.3.1.tgz"

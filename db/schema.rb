@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_04_04_145410) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_06_111123) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -78,6 +78,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_04_145410) do
     t.string "montage"
     t.string "director"
     t.string "producer"
+    t.integer "category", default: 0
   end
 
   create_table "texts", force: :cascade do |t|
