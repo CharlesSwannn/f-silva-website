@@ -79,3 +79,4 @@ end
 gem "devise"
 gem 'bootstrap-tooltip-rails', '~> 0.1'
 gem 'popper_js', '~> 2.11.5'
+gem 'jquery-rails'
