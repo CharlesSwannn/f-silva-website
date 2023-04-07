@@ -14,9 +14,14 @@
   }
 }
 
-.side-bar-p:hover .side-bar-span {
-  display: grid;
-  transition: 1s;
+.side-bar-p:hover {
+
+  transition: 1000ms;
+    .side-bar-span {
+    display: grid;
+    position: absolute;
+    z-index: 1;
+  }
 }
 
 
