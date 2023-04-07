@@ -1,0 +1,43 @@
+.side-bar {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+}
+.side-bar-link {
+  color: rgba(255,255,255,.55);
+  text-decoration: none;
+
+  &:hover {
+    color: rgba(255,255,255,.75);
+
+    transition: 500ms;
+  }
+}
+
+.side-bar-p:hover .side-bar-span {
+  display: grid;
+  transition: 1s;
+}
+
+
+.side-bar-span {
+  display: none;
+}
+
+.hidden-links-phone {
+  display: flex;
+  margin-top: 4vh;
+  justify-content: center;
+}
+
+.side-bar-link .phone {
+  margin: 0px 4px;
+}
+
+@media(max-width: 992px) {
+
+}
+
+@media(max-width: 768px) {
+
+}

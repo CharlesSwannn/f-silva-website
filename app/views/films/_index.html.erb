@@ -8,8 +8,18 @@
   <% end %>
 </div>
 
-<div class="side-bar d-flex flex-column" style="position:absolute; top:50%;">
-  <%= link_to  "Narrative", narrative_path  %>
-  <%= link_to  "Docs", docs_path %>
-  <%= link_to  "Dubbing", dubbing_path %>
+<div class="side-bar d-flex flex-column" style="">
+  <p class="side-bar-p">
+    <i class="fa-solid fa-filter"></i>
+      <span class="side-bar-span">
+        <%= link_to  "Narrative", narrative_path, class:"side-bar-link" %>
+        <%= link_to  "Docs", docs_path, class:"side-bar-link"  %>
+        <%= link_to  "Dubbing", dubbing_path, class:"side-bar-link"  %>
+      </span>
+  </p>
+</div>
+<div class="hidden-links-phone">
+  <%= link_to  "Narrative", narrative_path, class:"side-bar-link phone" %>
+  <%= link_to  "Docs", docs_path, class:"side-bar-link phone"  %>
+  <%= link_to  "Dubbing", dubbing_path, class:"side-bar-link phone"  %>
 </div>
