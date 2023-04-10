@@ -12,10 +12,3 @@
   <%= f.input :display_photos, label: "Frames que queiras mostrar", as: :file, input_html:{ multiple: true } %>
   <%= f.submit %>
 <% end %>
-
-<%= form_with model: film do |form| %>
-  <div class="field">
-    <%= form.label :content %>
-    <%= form.rich_text_area :content %>
-  </div>
-<% end %>
