@@ -1,4 +1,5 @@
 class Film < ApplicationRecord
+  has_rich_text :content
   enum category: %i[narrative doc dubbing]
 
   validates :title, presence: true
