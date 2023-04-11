@@ -3,13 +3,16 @@
   top: 50%;
   left: 2%;
 }
+span {
+  background-color: transparent;
+}
 .side-bar-link {
+  background-color: transparent;
   color: rgba(255,255,255,.55);
   text-decoration: none;
 
   &:hover {
     color: rgba(255,255,255,.75);
-
     transition: 500ms;
   }
 }
